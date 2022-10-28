@@ -1,0 +1,63 @@
+@charset "utf-8";
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
+/* body{background-color: #787878;} */
+
+.content .work-wrap{
+    display: grid;
+    max-width: 1750px;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 22%);
+    grid-gap: 70px;
+    justify-content: space-between;
+}
+
+.content .work-content{
+    width: 385px;
+}
+
+.content .work-content .work-img{width: 100%; overflow: hidden; font-size: 0;}
+
+.content .work-content:hover img{
+    transform: scale(1.05);
+}
+
+.content .work-content img{
+    width: 100%;
+    transition: 0.5s;
+}
+
+.content .work-content .work-desc{margin-bottom: 10px;}
+.content .work-content .work-desc p{
+    font-size: 1.2em;
+    padding: 10px;
+    font-weight: 100;
+}
+.content .work-content .work-desc p:nth-child(1){
+    border-bottom: 1px solid #000;
+    
+}
+.content .work-content .work-desc p:nth-child(2){
+    text-align: right;
+    font-size: 1.4em;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+
+.footer{position: relative;}
+
+@media screen and (min-width: 641px) and (max-width: 1200px){
+    .content .work-wrap{grid-template-columns: repeat(auto-fill, 49%); grid-gap: 20px 0;}
+    .window-content i{font-size: 5vw;}
+    .window-content{width: 90%;}
+}
+
+@media screen and (max-width: 640px){
+    .content .work-wrap{grid-template-columns: repeat(auto-fill, 99%); 
+    max-width:640px}
+    /* max-width 안넣어도 동작은 함*/
+    .window-content i{font-size: 6vw;
+        right: 30px; top: 20px;
+    }
+    .window-content{width: 100%;}
+}
