@@ -25,7 +25,7 @@ $("document").ready(function(){
     });
 
     const dark_mode = localStorage.getItem("dark_mode");
-    console.log(dark_mode)
+    
 
     if(!dark_mode){
         $("html *").attr("data-dark", "false");
