@@ -25,29 +25,31 @@
 }
 .experience .experience-content ul li .bg-area{
 	border-right: 1px solid #000;
-	background: url(../images/coco_logo.jpg) 50% 50% no-repeat;
-	background-size: cover;
-	background-size: 100%;
 	box-sizing: border-box;	
 }
-.experience .experience-content ul li:nth-child(1) .bg-area{
-	background:url(https://www.australia.com/content/australia/ko_kr/trips-and-itineraries/sydney-and-surrounds/ultimate-trip-to-australia/jcr:content/hero/desktop.adapt.1920.high.jpg) 50% 50% no-repeat; 
-	box-sizing: border-box;
+.experience .experience-content ul li .bg-area .swiper {
+	width: 100%;
+	height: 100%;
 }
-.experience .experience-content ul li:nth-child(2n) .bg-area{
+.experience .experience-content ul li .bg-area .swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.experience .experience-content ul li:nth-child(2) .bg-area{
 	border-right: none;
-	background: url(../images/China-Guilin-Messire-mountain-scenery.jpg) 50% 50% no-repeat; 
 	box-sizing: border-box;
 	order: 2;
 }
-.experience .experience-content ul li:nth-child(2n) .txt-wrap{
+.experience .experience-content ul li:nth-child(2) .txt-wrap{
 	order: 1;
 	border-right: 1px solid #000;
 	box-sizing: border-box;
 }
 .experience .experience-content ul li .txt-wrap .txt-area{
 	position: absolute;
-	
 }
 .experience .experience-content ul li .txt-wrap .txt-area h3{
 	margin-bottom: 30px;
@@ -117,7 +119,9 @@
 		transform: translateY(-50%);
 		padding: 0 40px;
 	}
-
+	.experience .experience-content ul li .txt-wrap .txt-area h3{
+		font-size: 24px;
+	}
 	.experience .experience-content ul li .txt-wrap .txt-area p{
 		width: 100% !important;
 		font-size: 13px;

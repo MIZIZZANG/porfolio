@@ -14,11 +14,12 @@
 .search .search-box .type{
     position: absolute;
     left: 50%;
-    top: 40%;
+    top: 30%;
     transform: translate(-62%, -34%);
     z-index: 99;
     width: 70%;
 }
+.search .search-box .type span{display: none;}
 #typed1{color: #000; font-size: 4.5em; line-height: 100px; display: block;}
 .type a{z-index: 1; position: absolute; cursor: pointer; top: 30px; left: 830px;
 }

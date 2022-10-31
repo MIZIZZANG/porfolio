@@ -53,7 +53,7 @@
 
 .about .profile-txt{
     text-align: right;
-    padding: 50px;
+    padding: 100px;
 }
 .about .profile-txt .main p{
     font-family: "Noto Sans KR", sans-serif; 
@@ -71,10 +71,10 @@
 .about .profile-txt .sub p{
     font-family: "Noto Sans KR", sans-serif;  
     font-size: 20px;
-    margin-top: 40px;
+    margin: 40px 0;
 } 
 
-.about .about-content{max-width: 100%; display: flex; padding: 50px;}
+.about .about-content{max-width: 100%; display: flex; padding: 100px;}
 .about .about-content:nth-child(2n+1){background-color: #ddd;}
 .about .about-content .sub-title{
     flex-basis: 20%;
@@ -141,7 +141,7 @@
     .about .about-content{flex-wrap: wrap; padding: 30px;}
     .about .about-content > div{flex-basis: 100%;}
 
-    .about .profile-txt{margin-top: 0px;}
+    .about .profile-txt{margin-top: 0px; padding: 50px;}
     .about .profile-txt > div{text-align: center;}
     .about .profile-txt .main p{font-size: 1.9em;}
     .about .profile-txt .main span{font-size: 1.5em;}
@@ -150,7 +150,7 @@
     .about .about-content >div h3{text-align: left;}
     .about .profile-edu >div p{font-size: 0.86em;}
 
-    .about .profile-skill .progress-area .progressbar-text{left: 95%!important;}
+    .about .profile-skill .progress-area .progressbar-text{left: 90%!important;}
     .about .profile-skill .progress-area .txt p{font-size: 0.79em;}
     /*     
         .marquee{
