@@ -1,9 +1,5 @@
 @charset "utf-8";
 
-.content .content-wrap{
-    margin: 120px auto 0;
-}
-
 .content .contact-wrap{
     max-width: 1200px;
     margin: 0 auto;
@@ -18,13 +14,10 @@
     flex-basis: 50%;
     text-align: center;
 }
-.content .contact-content .profile-pic img{
-    width: 50%;
-}
 
 .content .contact-content .title{
     flex-basis: 50%; 
-    padding-top: 2.4em; 
+    padding-top: 0.9em; 
     margin-bottom: 0.5em; 
 }
 .content .contact-content .title h3{
@@ -40,7 +33,7 @@
     flex-basis: 100%;
     font-size: 1.2em; 
     text-align: center; 
-    margin-top: 1em;
+    margin-top: 2em;
 }
 .content .contact-content .txt p{font-family: "Noto Sans KR", sans-serif;}
 
@@ -81,7 +74,7 @@
     .content .contact-content .profile-pic{flex-basis: 100%;text-align: center;}
     
 
-    .content .contact-content .title{flex-basis: 100%;text-align: center; padding-top: 0;}
+    .content .contact-content .title{flex-basis: 100%;text-align: center;}
     .content .contact-content .title h3{font-size: 0.8em;}
     
     
