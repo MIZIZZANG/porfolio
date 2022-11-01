@@ -10,7 +10,7 @@ $(document).ready(function () {
         // let i = $(this).index();
         let i = $(".content .design .work-content img").index(this)
         $(".window").fadeIn()
-        $(".window-content").slideDown()
+        $(".window-content").slideDown().scrollTop(0)
         $(".window-content img").attr("src", work_img_content[i])
         $("html, body").css("overflow", "hidden")
     });
