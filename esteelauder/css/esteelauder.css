@@ -528,7 +528,7 @@ body{
 .service .content-item-list{
     display: flex;
     justify-content: space-between;
-    line-height: 90%;
+    line-height: 80%;
 }
 .service .content-item{
     margin-top: 30px;
