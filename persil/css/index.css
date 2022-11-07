@@ -129,8 +129,9 @@ a{text-decoration: none; color: #000;}
 .product .product-content .left a{border: 1px solid #000; border-radius: 50px; padding: 5px 10px;}
 
 .product .product-content .right{flex-basis: 70%; width: 70%; height: 100%;}
+.product .product-content .right .productSwiper{position: relative;}
 .product .product-content .right .swiper .swiper-wrapper{display: flex;align-items: center;}
-.product .product-content .right .swiper .swiper-slide {
+.product .product-content .right .swiper .swiper-slide{
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -143,7 +144,7 @@ a{text-decoration: none; color: #000;}
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-    position: relative;
+    /* position: relative; */
 }
 
 .product .product-content .right .swiper .swiper-slide.swiper-slide-next img{
@@ -159,15 +160,13 @@ a{text-decoration: none; color: #000;}
 }
 .product .product-content .right .swiper .swiper-button-prev{
     color: #000;
-    position: fixed;
-    left: 50%;
-    top: 16%;
+    position: absolute;
+    left: 29%;
 }
 .product .product-content .right .swiper .swiper-button-next{
     color: #000;
-    position: fixed; 
-    right: 21%;
-    top: 16%;
+    position: absolute; 
+    right: 30%;
 }
 
 .tips{max-width: 100%; height: 800px;}
@@ -191,7 +190,12 @@ a{text-decoration: none; color: #000;}
 
 .tips .tips-content .right{flex-basis: 60%; overflow: hidden;}
 .tips .tips-content .right .swiper2{width: 60%; position: relative;}
-.tips .tips-content .right .swiper2 .swiper-wrapper{display: flex; align-items: center;}
+.tips .tips-content .right .swiper2 .swiper-wrapper{
+    width: 100%;
+    height: 500px;
+    display: flex; 
+    align-items: center;
+}
 .tips .tips-content .right .swiper2 .swiper-slide{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -210,19 +214,21 @@ a{text-decoration: none; color: #000;}
 .tips .tips-content .right .swiper2 .swiper-slide img{
     display: block;
     width: 100%;
-    height: 100%;
+    height: 75%;
     object-fit: cover;
     transition: 0.3s;
 }
 .tips .tips-content .right .swiper2 .swiper-button-prev{
     color: #000;
     position: absolute;
-    /* left: 31%; */
+    left: 31%;
+    top: 94%;
 }
 .tips .tips-content .right .swiper2 .swiper-button-next{
     color: #000;
     position: absolute; 
-    /* right: 31%; */
+    right: 31%;
+    top: 94%;
 }
 .tips .tips-content .right .swiper2 .swiper-pagination{
     color: #000;
