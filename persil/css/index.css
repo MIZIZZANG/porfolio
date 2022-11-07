@@ -253,7 +253,7 @@ a{text-decoration: none; color: #000;}
 .footer p:nth-child(7){font-size: 0.8em; font-weight: 100;}
 .footer img{position: absolute; top: 0; right: 0; padding: 60px; width: 140px;}
 
-@media screen and (max-width:1200px){
+@media screen and (min-width: 641px) and (max-width:1200px){
     .main{height: 800px;}
     .main .main-txt1{font-size: 80px;}
     .main .main-logo img{width: 840px;}
