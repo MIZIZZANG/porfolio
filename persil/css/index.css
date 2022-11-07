@@ -102,19 +102,19 @@ a{text-decoration: none; color: #000;}
 .video{
     width: 100%; height: 1080px; 
     margin-top: 20px; 
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
 }
 .video .bg-img{
     width: 100%; height: 100%;
     box-sizing: border-box; 
-    position: absolute;
+    position: relative;
     left: -25%; 
 }
 .video .bg-img img{width: 150%; box-sizing: border-box;}
-.video .video-content{
+.video .bg-img .video-content{
     position: absolute; 
-    top: 450px; right: 160px;
+    top: 40%; left: 83%;
 }
 
 .product{max-width: 100%; height: 600px; margin-bottom: 100px;}
@@ -128,9 +128,14 @@ a{text-decoration: none; color: #000;}
 .product .product-content .left .slide-title .slide-title-text{font-size: 2.4em; font-weight: bold; color: #da2128;}
 .product .product-content .left a{border: 1px solid #000; border-radius: 50px; padding: 5px 10px;}
 
-.product .product-content .right{flex-basis: 70%; width: 70%; height: 100%;}
+.product .product-content .right{flex-basis: 70%; width: 70%;}
 .product .product-content .right .productSwiper{position: relative;}
-.product .product-content .right .swiper .swiper-wrapper{display: flex;align-items: center;}
+.product .product-content .right .swiper .swiper-wrapper{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+}
 .product .product-content .right .swiper .swiper-slide{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -144,15 +149,17 @@ a{text-decoration: none; color: #000;}
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-    /* position: relative; */
+    position: relative; 
 }
+.swiper-button-next, .swiper-button-prev{z-index: 9999;}
 
 .product .product-content .right .swiper .swiper-slide.swiper-slide-next img{
     filter: grayscale(0);
-    width: 50%;
+    transform: scale(3.0);
 }
 .product .product-content .right .swiper .swiper-slide img{
     display: block;
+    /* transform: scale(3.0); */
     width: 20%;
     object-fit: cover;
     filter: grayscale(100%);
@@ -275,15 +282,18 @@ a{text-decoration: none; color: #000;}
     .product .product-content .left{flex-basis: 45%; padding : 0 0 0 40px;}
     .product .product-content .left .slide-title .slide-title-text{font-size: 1.7em;}
     .product .product-content .right{flex-basis: 55%;}
-    .product .product-content .right .swiper .swiper-slide.swiper-slide-next img{width: 70%;}
+    .product .product-content .right .swiper .swiper-wrapper{height: 400px;}
+    /* .product .product-content .right .swiper .swiper-slide.swiper-slide-next img{width: 70%;} */
+    /* .product .product-content .right .swiper .swiper-slide.swiper-slide-next img {transform: scale(1.0);} */
     .product .product-content .right .swiper .swiper-button-prev{left: 28%;}
     .product .product-content .right .swiper .swiper-button-next{right: 28%;}
 
-    .tips{height: 550px;}
+    .tips{height: 550px; margin-bottom: 40px;}
     .tips .title{padding: 20px 40px;}
     .tips .title::after{height: 450px;}
     .tips .tips-content .left{padding: 0 0 0 40px;}
     .tips .tips-content .left .slide-title2 .slide-title-text2{font-size: 1.8em;}
+    .tips .tips-content .right .swiper2 .swiper-wrapper{height: 400px;}
 
     .sns{padding: 40px;}
     .sns .youtube .img iframe{width: 100%; height: 242px;}
@@ -301,8 +311,8 @@ a{text-decoration: none; color: #000;}
 
     .video{height: 300px; margin: 10px;}
     .video .bg-img img{display: none;}
-    .video .video-content{top: 0; left: 0;}
-    .video .video-content iframe{width: 460px;}
+    .video .bg-img .video-content{top: 0; left: 0;}
+    .video .bg-img .video-content iframe{width: 580px;}
 
     .product {height: 380px;}
     .product .title{padding: 20px 30px;}
@@ -311,6 +321,9 @@ a{text-decoration: none; color: #000;}
     .product .product-content .left .slide-title .slide-title-text{font-size: 1.8em;}
     .product .product-content .left a{font-size: 0.8em;}
     .product .product-content .right{flex-basis: 100%;}
+    .product .product-content .right .swiper .swiper-wrapper{
+        height: 200px;
+    }
 
     .tips{height: 550px;}
     .tips .title{padding: 20px 30px;}
@@ -320,6 +333,8 @@ a{text-decoration: none; color: #000;}
     .tips .tips-content .left a{font-size: 0.8em;}
     .tips .tips-content .left .slide-title2 .slide-title-text2{font-size: 1.8em;}
     .tips .tips-content .right{flex-basis: 100%;}
+    .tips .tips-content .right .swiper2 .swiper-wrapper{height: 100%;}
+    .tips .tips-content .right .swiper2 .swiper-pagination{top: 165px;}
 
 
     .sns{flex-wrap: wrap; padding: 2%;}
